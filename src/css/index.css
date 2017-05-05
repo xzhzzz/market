@@ -1,3 +1,162 @@
-h1 {
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#container, #top-menu #top-menu-main {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #F8F8F8;
+}
+
+#top-menu {
+  box-sizing: border-box;
+  background-color: #F4F4F6;
+  border-bottom: 1px solid #eee;
+}
+
+#top-menu #top-menu-main {
+  height: 30px;
+}
+
+#top-menu #top-menu-main #top-menu-l {
+  float: left;
+}
+
+#top-menu #top-menu-main #top-menu-l ul {
+  width: 300px;
+  height: 30px;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+#top-menu #top-menu-main #top-menu-l ul li {
+  float: left;
+}
+
+#top-menu #top-menu-main #top-menu-l ul li a {
+  display: inline-block;
+  width: 100px;
+  box-sizing: border-box;
+  line-height: 30px;
+  text-align: center;
+  color: #666666;
+}
+
+#top-menu #top-menu-main #top-menu-l ul li a:hover {
+  color: #B90000;
+}
+
+#top-menu #top-menu-main #top-menu-l ul li:nth-child(1) a {
+  background-color: #FFF;
+}
+
+#top-menu #top-menu-main #top-menu-l ul li:nth-child(2) a {
+  color: #fff;
+  background-color: #B90000;
+}
+
+#top-menu #top-menu-main #top-menu-l ul li:nth-child(3) {
+  position: relative;
+}
+
+#top-menu #top-menu-main #top-menu-l ul li:nth-child(3):hover {
+  background-color: #FFF;
+}
+
+#top-menu #top-menu-main #top-menu-l ul li:nth-child(3):hover #app {
+  display: block;
+}
+
+#top-menu #top-menu-main #top-menu-l ul li:nth-child(3) span:nth-of-type(1) {
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 13px;
+  top: 8px;
+  left: 10px;
+  background: url("img/spirits.png") no-repeat -152px -80px;
+}
+
+#top-menu #top-menu-main #top-menu-l ul li:nth-child(3) span:nth-of-type(2) {
+  position: absolute;
+  display: block;
+  width: 7px;
+  height: 4px;
+  top: 13px;
+  right: 10px;
+  background: url("img/spirits.png") no-repeat -189px -844px;
+}
+
+#top-menu #top-menu-main #top-menu-l ul li:nth-child(3) #app {
+  display: none;
+  position: absolute;
+  width: 260px;
+  height: 150px;
+  background-color: #FFF;
+  box-shadow: 1px 1px 3px #666;
+}
+
+#top-menu #top-menu-main #top-menu-l ul li:nth-child(3) #app img {
+  margin: 10px auto 0px;
+}
+
+#top-menu #top-menu-main #top-menu-l ul li:nth-child(3) #app p {
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 25px;
+  margin-right: 5px;
+}
+
+#top-menu #top-menu-main #top-menu-l ul li:nth-child(3) #app h2 {
+  display: inline-block;
+  font-size: 22px;
+}
+
+#top-menu #top-menu-main #top-menu-r {
+  float: right;
+}
+
+#top-menu #top-menu-main #top-menu-r ul {
+  width: 420px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+#top-menu #top-menu-main #top-menu-r ul li {
+  float: left;
+}
+
+#top-menu #top-menu-main #top-menu-r ul li a {
+  font-size: 12px;
+  height: 30px;
+  color: #666666;
+  line-height: 30px;
+  display: block;
+  width: 60px;
+}
+
+#top-menu #top-menu-main #top-menu-r ul li:nth-of-type(1) a, #top-menu #top-menu-main #top-menu-r ul li:nth-of-type(2) a {
   color: red;
 }

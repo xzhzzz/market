@@ -1,3 +1,117 @@
-h1{
-	color:red;
+@import 'common';
+
+body{
+	background-color: #F8F8F8;
+}
+#top-menu{
+	box-sizing:border-box;
+	background-color: #F4F4F6;
+	border-bottom:1px solid #eee;
+
+	#top-menu-main{
+		@extend #container;
+		height: 30px;
+		#top-menu-l{
+			float:left;
+			ul{
+				width:300px;
+				height:30px;
+				border-left:1px solid #eee;
+				border-right:1px solid #eee;
+				li{
+					float:left;
+					a{
+						display:inline-block;
+						width:100px;
+						box-sizing:border-box;
+						line-height:30px;
+						text-align:center;
+						color:#666666;
+						&:hover{
+							color:#B90000;
+						}
+					}
+					&:nth-child(1) a{
+						background-color: #FFF;
+					}
+					&:nth-child(2) a{
+						color:#fff;
+						background-color:#B90000;
+					}
+					&:nth-child(3){
+						position:relative;
+						&:hover{
+							background-color: #FFF;
+						}
+						&:hover #app{
+							display:block;
+						}
+						span:nth-of-type(1){
+							position:absolute;
+							display:block;
+							width:8px;
+							height:13px;	
+							top:8px;
+							left:10px;
+							background: url('img/spirits.png') no-repeat -152px -80px;
+						} 
+
+						span:nth-of-type(2){
+							position:absolute;
+							display:block;
+							width:7px;
+							height:4px;
+							top:13px;
+							right:10px;
+							background: url('img/spirits.png') no-repeat -189px -844px;
+						}
+
+						#app{
+							display:none;
+							position:absolute;
+							width:260px;
+							height:150px;
+							background-color: #FFF;
+							box-shadow:1px 1px 3px #666;
+							img{
+								margin:10px auto 0px;
+							}
+							p{
+								display:inline-block;
+								font-size:20px;
+								margin-left:25px;
+								margin-right:5px;
+							}
+							h2{
+								display:inline-block;
+								font-size:22px;
+							}
+						}
+					}
+				}
+			}
+		}
+		#top-menu-r{
+			float:right;
+			ul{
+				width: 420px;
+				height:30px;
+				box-sizing:border-box;		
+				li{
+					float:left;
+					a{	
+						font-size:12px;
+						height:30px;
+						color:#666666;
+						line-height:30px;
+						display:block;
+						width: 60px;
+					}
+					&:nth-of-type(1) a,&:nth-of-type(2) a{
+						color:red;
+					}
+				}
+			}
+		}
+	}
 }
