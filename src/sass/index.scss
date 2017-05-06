@@ -5,7 +5,7 @@ body{
 }
 #top-menu{
 	box-sizing:border-box;
-	background-color: #F4F4F6;
+	background: url('img/bg2.png') 0 -4px;
 	border-bottom:1px solid #eee;
 
 	#top-menu-main{
@@ -93,25 +93,242 @@ body{
 		}
 		#top-menu-r{
 			float:right;
-			ul{
-				width: 420px;
+			a{	
+
+				font-size:12px;
 				height:30px;
-				box-sizing:border-box;		
-				li{
-					float:left;
-					a{	
-						font-size:12px;
-						height:30px;
-						color:#666666;
-						line-height:30px;
-						display:block;
-						width: 60px;
-					}
-					&:nth-of-type(1) a,&:nth-of-type(2) a{
-						color:red;
+				color:#666666;
+				display:block;
+				width: 60px;
+				text-align:center;
+			}
+			#login{
+				float:left;
+				width:110px;
+				display:inline-block;
+				a{	
+					color:red;
+					height:15px;
+					line-height:15px;
+					margin-top:8px;
+					width:40px;
+					display:inline-block;
+					&:nth-child(2){
+						border-right:1px solid #ddd;
+						padding-right:10px;
 					}
 				}
 			}
+			ul{
+				float:left;
+				width: 270px;
+				height:30px;
+				box-sizing:border-box;	
+				li{
+					float:left;
+					position:relative;
+					a{
+						line-height:30px;
+						&:hover{
+							color:#B90000;
+						}
+					}
+					&:nth-child(1) a{
+						padding-right:15px;
+					}
+					&:nth-child(1) span,&:nth-child(3) span,&:nth-child(4) span{
+						position:absolute;
+						display:block;
+						width:8px;
+						height:13px;	
+						top:14px;
+						right:8px;
+						background: url('img/spirits.png') no-repeat -189px -844px;
+					}
+					&:nth-child(1):hover{
+						background-color: #FFF;
+					}
+					&:nth-child(1):hover #sc{
+						display:block;
+					}
+					#sc{
+						position:absolute;
+						background-color: #FFF;
+						display:none;
+					}
+
+					&:nth-child(3):hover{
+						background-color: #FFF;
+					}
+					&:nth-child(3):hover #gg{
+						display:block;
+					}
+					&:nth-child(4):hover{
+						background-color: #FFF;
+					}
+					&:nth-child(4):hover #more{
+						display:block;
+					}
+					#gg{
+						padding:10px;
+						top:30px;
+						right:0;
+						display:none;
+						position:absolute;
+						width:150px;
+						height:100px;
+						background-color: #FFF;
+						a{
+							height:20px;
+							line-height:20px;
+							text-align:left;
+							width:150px;
+							font-size:12px;
+						}
+						a:nth-of-type(1){
+							color:red;
+						}
+					}
+					#more{
+						padding:10px;
+						top:30px;
+						right:0;
+						display:none;
+						position:absolute;
+						width:80px;
+						height:40px;
+						background-color: #FFF;
+						a{
+							height:20px;
+							line-height:20px;
+							text-align:left;
+							width:80px;
+							font-size:12px;
+						}
+					}
+
+				}
+			}
+		}
+	}
+}
+
+#top{
+	#logo{
+		float:left;
+		height:125px;
+		width: 300px;
+		img{
+			padding-top:23px;
+		}
+	}
+	#top-search{
+		height:125px;
+		float:left;
+		width: 685px;
+		#search{
+			margin-top:43px;
+			width:527px;
+			height:34px;
+			box-sizing:border-box;
+			border:2px solid #000;
+			input{
+				float:left;
+				width: 440px;
+				height:30px;
+				border:0;
+				outline:none;
+				font-size:16px;
+			}
+			#btn_search{
+				cursor:pointer;
+				display:inline-block;
+				width:83px;
+				height:32px;
+				border:none;
+				background:url('img/spirits.png') no-repeat -115px -532px;
+			}
+		}
+		ul{
+			margin-top:15px;
+			li{
+				float:left;
+				a{	
+					height:14px;
+					line-height:14px;
+					font-size:12px;
+					color:#666;
+					display:block;
+					border-right:1px solid #666;
+					padding-right:5px;
+					padding-left:5px;
+				}
+				a:hover{
+					color:red;
+				}
+			}
+			li:nth-of-type(1) a{
+				color:red;
+				padding-left:0;
+			}
+			li:last-of-type a{
+				border:0;
+			}
+		}
+	}
+	#top-buy{
+		float:left;
+		height:125px;
+		margin-left:40px;
+		#buycar{
+			position:relative;
+			cursor:pointer;
+			margin-top:43px;
+			width: 147px;
+			height: 34px;
+			box-sizing:border-box;
+			border:1px solid #ccc;
+			background-color: #FFF;
+			span{
+				margin-top:6px;
+				margin-left:10px;
+				float:left;
+				display:block;
+				width:18px;
+				height:18px;
+				background: url('img/spirits.png') no-repeat -92px -533px;
+			}
+			#num{
+				margin-top:6px;
+				font-size:12px;
+				display:inline-block;
+				margin-left:16px;
+				i{
+					position:absolute;
+					width:7px;
+					height:4px;
+					top:13px;
+					right:10px;
+					background: url('img/spirits.png') no-repeat -189px -844px;
+				}
+			}
+			#buy-content{
+				font-size:12px;
+				text-align:center;
+				line-height:40px;
+				width:300px;
+				height: 40px;
+				position:absolute;
+				top:32px;
+				right:-1px;
+				background-color: #FFF;
+				border:1px solid #ddd;
+				display:none;
+				box-shadow:1px 1px 2px 0px #999;
+			}
+		}
+		#buycar:hover #buy-content{
+			display:block;
 		}
 	}
 }
