@@ -660,3 +660,321 @@ body {
   z-index: 1000;
   cursor: pointer;
 }
+
+#main-top {
+  background-color: #fff;
+  height: 550px;
+  margin-top: 35px;
+}
+
+#main-top h2 {
+  background-color: #F8F8F8;
+  display: block;
+  font-size: 16px;
+  color: #999;
+  height: 27px;
+}
+
+#main-top h2 a {
+  display: inline-block;
+  float: right;
+  color: #999;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+#main-top h2 a:hover {
+  color: red;
+}
+
+#main-top #line2 {
+  height: 3px;
+  width: 100%;
+  background-color: #000;
+}
+
+#main-top .con {
+  height: 360px;
+  padding-left: 16px;
+}
+
+#main-top .con a {
+  display: inline-block;
+  width: 267px;
+  height: 321px;
+  margin: 22px 10px;
+}
+
+#main-top .con-bot {
+  position: relative;
+  margin-top: 20px;
+  height: 150px;
+}
+
+#main-top .con-bot .gd {
+  margin: 0 auto;
+  width: 990px;
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+}
+
+#main-top .con-bot .gd .ul {
+  margin-left: 10px;
+  width: 2200px;
+  position: absolute;
+}
+
+#main-top .con-bot .gd .ul a {
+  display: inline-block;
+  width: 110px;
+  height: 50px;
+  float: left;
+  background-color: #fff;
+  margin-top: 5px;
+}
+
+#main-top .con-bot .left {
+  cursor: pointer;
+  position: absolute;
+  top: 28px;
+  left: 40px;
+  width: 18px;
+  height: 56px;
+  background: url("img/brand.png") no-repeat 0 -127px;
+}
+
+#main-top .con-bot .right {
+  cursor: pointer;
+  position: absolute;
+  top: 28px;
+  right: 40px;
+  width: 18px;
+  height: 56px;
+  background: url("img/brand.png") no-repeat -42px -127px;
+}
+
+#main-mid .section {
+  background-color: #fff;
+  height: 515px;
+}
+
+#main-mid .section h2 {
+  background-color: #F8F8F8;
+  margin-top: 25px;
+  background-color: #F8F8F8;
+  display: block;
+  height: 27px;
+}
+
+#main-mid .section h2 a:nth-of-type(1) {
+  display: inline-block;
+  color: #000;
+  font-size: 16px;
+}
+
+#main-mid .section h2 a:nth-of-type(1):hover {
+  color: red;
+}
+
+#main-mid .section h2 a:nth-of-type(2) {
+  display: inline-block;
+  float: right;
+  color: #999;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+#main-mid .section h2 a:nth-of-type(2):hover {
+  color: red;
+}
+
+#main-mid .section .line3 {
+  height: 3px;
+  width: 100%;
+  background-color: #000;
+}
+
+#main-mid .section .main-l {
+  float: left;
+  width: 225px;
+  margin-top: 20px;
+}
+
+#main-mid .section .main-l #shoe {
+  display: block;
+  width: 225px;
+  text-align: center;
+}
+
+#main-mid .section .main-l #shoe img {
+  width: 200px;
+  height: 67px;
+  display: inline-block;
+}
+
+#main-mid .section .main-l .tp {
+  margin-top: 10px;
+  width: 225px;
+  text-align: center;
+}
+
+#main-mid .section .main-l .tp a {
+  height: 50px;
+  width: 100px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+#main-mid .section .main-l .tp a img {
+  display: inline-block;
+}
+
+#main-mid .section .main-m {
+  margin-top: 20px;
+  float: left;
+  width: 360px;
+  height: 430px;
+}
+
+#main-mid .section .main-r {
+  margin-left: 15px;
+  float: left;
+  width: 560px;
+  height: 465px;
+}
+
+#main-mid .section .main-r a {
+  float: left;
+  display: block;
+  width: 186px;
+  height: 214px;
+}
+
+#main-mid .section .main-r .ln1 {
+  margin-top: 8px;
+  float: left;
+  width: 100%;
+  height: 2px;
+  background-color: #666;
+}
+
+#main-bot {
+  background-color: #fff;
+  height: 390px;
+  margin-top: 35px;
+}
+
+#main-bot h2 {
+  background-color: #F8F8F8;
+  display: block;
+  font-size: 16px;
+  color: #999;
+  height: 27px;
+}
+
+#main-bot h2 a {
+  display: inline-block;
+  float: right;
+  color: #999;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+#main-bot h2 a:hover {
+  color: red;
+}
+
+#main-bot #line2 {
+  height: 3px;
+  width: 100%;
+  background-color: #000;
+}
+
+#main-bot #main-bot-l {
+  float: left;
+  width: 190px;
+  box-sizing: border-box;
+}
+
+#main-bot #main-bot-l ul li {
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 16px;
+  width: 190px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #ccc;
+  border-top: 0;
+}
+
+#main-bot #main-bot-l ul li span {
+  float: right;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+#main-bot #main-bot-l ul li:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+#main-bot #main-bot-l ul li:hover span {
+  color: #fff;
+}
+
+#main-bot #main-bot-r {
+  float: left;
+  height: 340px;
+  width: 1000px;
+  margin-top: 20px;
+}
+
+#main-bot #main-bot-r .a {
+  overflow: hidden;
+}
+
+#main-bot #main-bot-r .a li {
+  margin-left: 14px;
+  float: left;
+}
+
+#main-bot #main-bot-r .a li img {
+  border: 1px solid #ddd;
+  display: block;
+  width: 230px;
+  height: 248px;
+}
+
+#main-bot #main-bot-r .a li span {
+  box-sizing: border-box;
+  padding-left: 10px;
+  width: 232px;
+  font-size: 12px;
+  display: block;
+  background-color: #F0A1A1;
+}
+
+#main-bot #main-bot-r .a li a {
+  width: 232px;
+  display: block;
+  font-size: 12px;
+  color: #999;
+}
+
+#main-bot #main-bot-r .a li a:hover {
+  color: red;
+}
+
+#main-bot #main-bot-r .a li p {
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+}
+
+#main-bot #main-bot-r .a li p b {
+  color: #999;
+  text-decoration: line-through;
+  font-weight: normal;
+  font-size: 12px;
+}
