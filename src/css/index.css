@@ -21,7 +21,7 @@ html, body {
   height: 100%;
 }
 
-#container, #top-menu #top-menu-main {
+.container, #top-menu #top-menu-main {
   width: 1190px;
   margin: 0 auto;
 }
@@ -45,7 +45,7 @@ body {
 }
 
 #top-menu #top-menu-main #top-menu-l ul {
-  width: 300px;
+  width: 310px;
   height: 30px;
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
@@ -237,6 +237,7 @@ body {
   right: 0;
   display: none;
   position: absolute;
+  z-index: 1000;
   width: 150px;
   height: 100px;
   background-color: #FFF;
@@ -260,6 +261,7 @@ body {
   right: 0;
   display: none;
   position: absolute;
+  z-index: 1000;
   width: 80px;
   height: 40px;
   background-color: #FFF;
@@ -271,6 +273,10 @@ body {
   text-align: left;
   width: 80px;
   font-size: 12px;
+}
+
+#top {
+  overflow: hidden;
 }
 
 #top #logo {
@@ -407,4 +413,250 @@ body {
 
 #top #top-buy #buycar:hover #buy-content {
   display: block;
+}
+
+#top #top-buy > p {
+  margin-top: 10px;
+  font-size: 12px;
+  color: red;
+}
+
+#nav {
+  width: 100%;
+  height: 40px;
+}
+
+#nav h1 {
+  text-align: center;
+  float: left;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  width: 200px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #000;
+}
+
+#nav #nav-l {
+  float: left;
+  width: 510px;
+}
+
+#nav #nav-l li {
+  float: left;
+}
+
+#nav #nav-l li a {
+  text-align: center;
+  display: block;
+  line-height: 40px;
+  width: 70px;
+  font-size: 16px;
+  height: 40px;
+  color: #000;
+  font-weight: bold;
+}
+
+#nav #nav-l li a:hover {
+  color: red;
+}
+
+#nav #nav-r {
+  float: right;
+  width: 350px;
+}
+
+#nav #nav-r li {
+  float: left;
+}
+
+#nav #nav-r li a {
+  text-align: center;
+  display: block;
+  line-height: 40px;
+  width: 60px;
+  font-size: 14px;
+  height: 40px;
+  color: #000;
+}
+
+#nav #nav-r li a:hover {
+  color: red;
+}
+
+#nav #nav-r li:nth-child(1) a {
+  color: red;
+}
+
+#nav #nav-r li:nth-child(4) a {
+  width: 100px;
+}
+
+#line {
+  width: 100%;
+  height: 5px;
+  background-color: #000;
+  bottom: 0;
+}
+
+#banner {
+  width: 100%;
+  height: 480px;
+}
+
+#banner #banner-l {
+  float: left;
+  height: 100%;
+  width: 200px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+
+#banner #banner-l ul .li1 {
+  position: relative;
+  height: 65px;
+}
+
+#banner #banner-l ul .li1 .top {
+  padding-top: 15px;
+  margin-left: 15px;
+  position: relative;
+}
+
+#banner #banner-l ul .li1 .top .icon {
+  position: absolute;
+  display: inline-block;
+  top: 16px;
+  left: 0;
+  width: 26px;
+  height: 15px;
+  background: url("img/ban-icon.jpg") no-repeat 0 -31px;
+}
+
+#banner #banner-l ul .li1 .top a {
+  display: inline-block;
+  color: #000;
+}
+
+#banner #banner-l ul .li1 .top a:nth-of-type(1) {
+  margin-left: 30px;
+}
+
+#banner #banner-l ul .li1 .bot {
+  margin-left: 43px;
+}
+
+#banner #banner-l ul .li1 .bot a {
+  font-size: 12px;
+  color: #666;
+}
+
+#banner #banner-l ul .li1 a:hover {
+  text-decoration: underline;
+}
+
+#banner #banner-l ul .li1 .list {
+  z-index: 1000;
+  display: none;
+  box-sizing: border-box;
+  position: absolute;
+  right: -151px;
+  top: 0;
+  width: 150px;
+  height: 480px;
+  background-color: #fff;
+}
+
+#banner #banner-l ul .li1 .list ul li {
+  margin-bottom: 20px;
+}
+
+#banner #banner-l ul .li1 .list ul li .a1 {
+  position: relative;
+  transition: all 1s;
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  width: 100px;
+  color: #000;
+  height: 18px;
+  line-height: 18px;
+  background-color: #eee;
+}
+
+#banner #banner-l ul .li1 .list ul li .a1:hover {
+  text-decoration: none;
+  left: 10px;
+}
+
+#banner #banner-l ul .li1 .list ul li .list-l {
+  display: inline-block;
+  width: 45%;
+}
+
+#banner #banner-l ul .li1 .list ul li .list-l a {
+  display: block;
+  text-align: center;
+  margin-left: 10px;
+}
+
+#banner #banner-l ul .li1 .list ul li .list-l a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+#banner #banner-l ul .li1:hover {
+  background-color: #656565;
+}
+
+#banner #banner-l ul .li1:hover span {
+  color: #fff;
+}
+
+#banner #banner-l ul .li1:hover .top > a, #banner #banner-l ul .li1:hover .bot > a {
+  color: #fff;
+}
+
+#banner #banner-l ul .li1:hover .icon {
+  background: url("img/ban-icon.jpg") no-repeat -52px -31px;
+}
+
+#banner #banner-l ul .li1:hover .list {
+  display: block;
+}
+
+#banner #banner-r {
+  float: left;
+  box-sizing: border-box;
+  width: 990px;
+  height: 480px;
+  position: relative;
+}
+
+#banner #banner-r img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#banner #banner-r .cir {
+  position: absolute;
+  bottom: 20px;
+  left: 80%;
+  z-index: 1000;
+}
+
+#banner #banner-r .cir span {
+  color: #fff;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  background-color: #000;
+  border-radius: 10px;
+  z-index: 1000;
+  cursor: pointer;
 }

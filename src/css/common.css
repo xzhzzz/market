@@ -21,7 +21,7 @@ html, body {
   height: 100%;
 }
 
-#container {
+.container {
   width: 1190px;
   margin: 0 auto;
 }
