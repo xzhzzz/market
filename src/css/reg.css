@@ -106,6 +106,7 @@ html, body {
   height: 30px;
   border: 1px solid #ccc;
   margin: 35px auto;
+  position: relative;
 }
 
 .main #login .sr span {
@@ -127,6 +128,15 @@ html, body {
 
 .main #login .sr input::placeholder {
   font-size: 12px;
+}
+
+.main #login .sr p {
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  font-size: 12px;
+  color: red;
+  display: none;
 }
 
 .main #login .xy {
