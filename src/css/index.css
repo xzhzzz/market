@@ -1021,34 +1021,34 @@ body {
   overflow: hidden;
 }
 
-#main-bot2 #con-logo ul {
+#main-bot2 #con-logo .ul1 {
   position: relative;
   width: 2160px;
   height: 100%;
 }
 
-#main-bot2 #con-logo ul li {
+#main-bot2 #con-logo .ul1 li {
   float: left;
-  width: 90px;
+  width: 89px;
   height: 60px;
   border-right: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   text-align: center;
 }
 
-#main-bot2 #con-logo ul li a {
+#main-bot2 #con-logo .ul1 li a {
   color: #ccc;
   font-size: 12px;
 }
 
-#main-bot2 #con-logo ul li a img {
+#main-bot2 #con-logo .ul1 li a img {
   margin: 0 auto;
   width: 85px;
   height: 40px;
   display: block;
 }
 
-#main-bot2 #con-logo ul li a:hover {
+#main-bot2 #con-logo .ul1 li a:hover {
   color: red;
 }
 
