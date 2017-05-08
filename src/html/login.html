@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>注册界面</title>
+	<link rel="stylesheet" type="text/css" href="../css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+	<script src="../lib/require.js" data-main="../js/login.js"></script>
+</head>
+<body>
+	<div id="header"></div>
+	<div class="container">
+		<div id="nav">
+			<div class="logo">
+				<img src="../img/reg-logo.png" alt="" />
+			</div>
+			<h1>用户登录</h1>
+		</div>
+	</div>
+	<div class="main">
+		<form action="post" id="login" name="login">
+			<div class="login-box">
+				<a href="login.html" id="left">登录</a>
+				<a href="reg.html" id="right">注册</a>
+			</div>
+			<div class="sr">
+				<span>用户名</span>
+				<input type="text" placeholder="请输入您的用户名" id="usename" required/>
+			</div>
+			<div class="sr">
+				<span>密码</span>
+				<input type="text" id="psw" placeholder="请输入您的密码" required/>
+			</div>
+			<div class="wjmm">
+				<a href="">忘记密码?</a>
+			</div>
+			<input type="submit" id="btn-send" value="点击登录"/>		
+			<p>使用合作网站账号登录优购：</p>
+			<div id="icon-reg">
+				<ul>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</div>
+		</form>
+	</div>
+	<p id="wb">Copyright © 2011-2014 Yougou Technology Co., Ltd. 粤ICP备09070608号-4 增值电信业务经营许可证：粤 B2-20090203</p>
+</body>
+</html>

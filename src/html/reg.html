@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>注册界面</title>
+	<link rel="stylesheet" type="text/css" href="../css/header.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/reg.css"/>
+	<script src="../lib/require.js" data-main="../js/reg.js"></script>
+</head>
+<body>
+	<div id="header"></div>
+	<div class="container">
+		<div id="nav">
+			<div class="logo">
+				<img src="../img/reg-logo.png" alt="" />
+			</div>
+			<h1>新用户注册</h1>
+		</div>
+	</div>
+	<div class="main">
+		<form action="post" id="login" name="login">
+			<div class="login-box">
+				<a href="login.html" id="left">登录</a>
+				<a href="reg.html" id="right">注册</a>
+			</div>
+			<div class="sr">
+				<span>用户名</span>
+				<input type="text" placeholder="请输入您的用户名" id="usename" required/>
+			</div>
+			<div class="sr">
+				<span>邮箱</span>
+				<input type="text" placeholder="请输入您的邮箱" id="usename" required/>
+			</div>
+			<div class="sr">
+				<span>密码</span>
+				<input type="text" id="psw" placeholder="字母、数字、符号均可，6-25个字符" required/>
+			</div>
+			<div class="sr">
+				<span>确认密码</span>
+				<input type="text" id="yz" required/>
+			</div>
+			<div class="xy">
+				<input type="checkbox"/>
+				<span>我已阅读并同意《优购会员注册协议》</span>
+			</div>
+			<input type="submit" id="btn-send" value="确认并注册"/>			
+		</form>
+	</div>
+	<p id="wb">Copyright © 2011-2014 Yougou Technology Co., Ltd. 粤ICP备09070608号-4 增值电信业务经营许可证：粤 B2-20090203</p>
+</body>
+</html>

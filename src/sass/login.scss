@@ -1,0 +1,159 @@
+@import "common";
+
+#nav{
+   height: 80px;
+   .logo{
+       float: left;
+       margin-top:20px;
+       height:42px;
+       width: 170px;
+       border-right:1px solid #ccc;
+       img{
+           margin-top:5px;
+           height:32px;
+           display: inline-block;
+       }
+    } 
+    h1{
+        display: block;
+        float: left;
+        font-size: 20px;
+        font-weight: normal;
+        margin-top:27px;
+        margin-left:20px;
+    }  
+}
+.main{
+    height: 550px;
+    width: 100%;
+    background: url('img/bg.jpg') no-repeat;
+    #login{
+        float: right;
+        width: 350px;
+        height: 515px;
+        background-color: #fff;
+        margin:20px 150px 0 0;
+        .login-box{
+            box-sizing: border-box;
+            width: 320px;
+            height: 50px;
+            margin: 20px auto;
+            border-bottom:1px solid #eee;
+            text-align: center;
+            padding-top:14px;
+            #right{
+                height:35px;
+                width: 100px;
+                background-color: #eee;
+                display: inline-block;
+                font-size: 12px;
+                color:#000;
+                line-height: 35px;
+                &:hover{
+                    color:red;
+                }
+            }
+            #left{
+                background-color: #000;
+                height:35px;
+                width: 100px;
+                font-size: 12px;
+                display:inline-block;
+                color:#fff;
+                line-height: 35px;
+            }
+        }
+        .sr{
+            width:280px;
+            height: 30px;
+            border: 1px solid #ccc;
+            margin:35px auto;
+            span{
+                width: 40x;
+                height: 30px;
+                line-height: 30px;
+                display: inline-block;
+                font-size: 12px;
+                margin-left:10px;
+                margin-right:10px;
+            }
+            input{
+                width: 200px;
+                height: 30px;
+                border: none;
+                outline: none;
+                &::placeholder{
+                    font-size: 12px;
+                }
+            }
+        }
+        .wjmm{
+           position: relative; 
+           top: 7px;
+           left: 270px;
+           a{
+               color:#999;
+               text-decoration: underline;
+               font-size: 12px;
+               &:hover{
+                   color: red;
+               }
+           }
+        }
+        #btn-send{
+            cursor: pointer;
+            display: block;
+            margin:0 auto;
+            width: 300px;
+            height: 40px;
+            margin-top: 10px;
+            border: 0;
+            font-size: 16px;
+            background-color: red;
+            color:#fff;
+            margin-bottom:30px;
+        }
+        p{
+            text-align: center;
+            font-size: 12px;
+            color:#999;
+        }
+        #icon-reg{
+            ul{
+                width: 250px;
+                margin: 20px auto;
+                height: 40px;
+                padding-left:20px;
+                li{
+                   float: left;
+                   a{
+                      display: block;
+                      width: 34px;
+                      height: 34px; 
+                      margin:5px;
+                   }
+                }
+                li:nth-of-type(1) a{
+                       background: url('img/icon_reg.png') no-repeat -37px -21px;
+                } 
+                li:nth-of-type(2) a{
+                       background: url('img/icon_reg.png') no-repeat -73px -21px;
+                } 
+                li:nth-of-type(3) a{
+                       background: url('img/icon_reg.png') no-repeat -109px -21px;
+                } 
+                li:nth-of-type(4) a{
+                       background: url('img/icon_reg.png') no-repeat -37px -56px;
+                } 
+                li:nth-of-type(5) a{
+                       background: url('img/icon_reg.png') no-repeat -73px -56px;
+                } 
+            }
+        }
+    }
+}
+#wb{
+    text-align: center;
+    color:#999;
+    font-size: 12px;
+}

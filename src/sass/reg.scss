@@ -1,0 +1,125 @@
+@import "common";
+
+#nav{
+   height: 80px;
+   .logo{
+       float: left;
+       margin-top:20px;
+       height:42px;
+       width: 170px;
+       border-right:1px solid #ccc;
+       img{
+           margin-top:5px;
+           height:32px;
+           display: inline-block;
+       }
+    } 
+    h1{
+        display: block;
+        float: left;
+        font-size: 20px;
+        font-weight: normal;
+        margin-top:27px;
+        margin-left:20px;
+    }  
+}
+.main{
+    height: 550px;
+    width: 100%;
+    background: url('img/bg.jpg') no-repeat;
+    #login{
+        float: right;
+        width: 350px;
+        height: 515px;
+        background-color: #fff;
+        margin:20px 150px 0 0;
+        .login-box{
+            box-sizing: border-box;
+            width: 320px;
+            height: 50px;
+            margin: 20px auto;
+            border-bottom:1px solid #eee;
+            text-align: center;
+            padding-top:14px;
+            #left{
+                height:35px;
+                width: 100px;
+                background-color: #eee;
+                display: inline-block;
+                font-size: 12px;
+                color:#000;
+                line-height: 35px;
+                &:hover{
+                    color:red;
+                }
+            }
+            #right{
+                background-color: #000;
+                height:35px;
+                width: 100px;
+                font-size: 12px;
+                display:inline-block;
+                color:#fff;
+                line-height: 35px;
+            }
+        }
+        .sr{
+            width:280px;
+            height: 30px;
+            border: 1px solid #ccc;
+            margin:35px auto;
+            span{
+                width: 40x;
+                height: 30px;
+                line-height: 30px;
+                display: inline-block;
+                font-size: 12px;
+                margin-left:10px;
+                margin-right:10px;
+            }
+            input{
+                width: 200px;
+                height: 30px;
+                border: none;
+                outline: none;
+                &::placeholder{
+                    font-size: 12px;
+                }
+            }
+        }
+        .xy{
+            width:280px;
+            height: 30px;
+            margin:0 auto;
+            input{
+                margin-left: 35px;
+                margin-top:2px;
+                float: left;
+                display: block;
+            }
+            span{
+                float: left;
+                font-size: 12px;
+                color: red;
+                display: block;
+            }
+        }
+        #btn-send{
+            cursor: pointer;
+            display: block;
+            margin:0 auto;
+            width: 300px;
+            height: 40px;
+            margin-top: 10px;
+            border: 0;
+            font-size: 16px;
+            background-color: red;
+            color:#fff;
+        }
+    }
+}
+#wb{
+    text-align: center;
+    color:#999;
+    font-size: 12px;
+}

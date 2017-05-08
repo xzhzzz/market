@@ -1,0 +1,206 @@
+@import 'common';
+#top-menu{
+    box-sizing:border-box;
+    background: url('img/bg2.png') 0 -4px;
+    border-bottom:1px solid #eee;
+    #top-menu-main{
+        @extend .container;
+        height: 30px;
+        #top-menu-l{
+            float:left;
+            ul{
+                width:310px;
+                height:30px;
+                border-left:1px solid #eee;
+                border-right:1px solid #eee;
+                li{
+                    float:left;
+                    a{
+                        display:inline-block;
+                        width:100px;
+                        box-sizing:border-box;
+                        line-height:30px;
+                        text-align:center;
+                        color:#666666;
+                        &:hover{
+                            color:#B90000;
+                        }
+                    }
+                    &:nth-child(1) a{
+                        background-color: #FFF;
+                    }
+                    &:nth-child(2) a{
+                        color:#fff;
+                        background-color:#B90000;
+                    }
+                    &:nth-child(3){
+                        position:relative;
+                        &:hover{
+                            background-color: #FFF;
+                        }
+                        &:hover #app{
+                            display:block;
+                        }
+                        span:nth-of-type(1){
+                            position:absolute;
+                            display:block;
+                            width:8px;
+                            height:13px;    
+                            top:8px;
+                            left:10px;
+                            background: url('img/spirits.png') no-repeat -152px -80px;
+                        } 
+                        span:nth-of-type(2){
+                            position:absolute;
+                            display:block;
+                            width:7px;
+                            height:4px;
+                            top:13px;
+                            right:10px;
+                            background: url('img/spirits.png') no-repeat -189px -844px;
+                        }
+                        #app{
+                            display:none;
+                            position:absolute;
+                            width:260px;
+                            height:150px;
+                            background-color: #FFF;
+                            box-shadow:1px 1px 3px #666;
+                            img{
+                                margin:10px auto 0px;
+                            }
+                            p{
+                                display:inline-block;
+                                font-size:20px;
+                                margin-left:25px;
+                                margin-right:5px;
+                            }
+                            h2{
+                                display:inline-block;
+                                font-size:22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #top-menu-r{
+            float:right;
+            a{  
+                font-size:12px;
+                height:30px;
+                color:#666666;
+                display:block;
+                width: 60px;
+                text-align:center;
+            }
+            #login{
+                float:left;
+                width:110px;
+                display:inline-block;
+                a{  
+                    color:red;
+                    height:15px;
+                    line-height:15px;
+                    margin-top:8px;
+                    width:40px;
+                    display:inline-block;
+                    &:nth-child(2){
+                        border-right:1px solid #ddd;
+                        padding-right:10px;
+                    }
+                }
+            }
+            ul{
+                float:left;
+                width: 270px;
+                height:30px;
+                box-sizing:border-box;  
+                li{
+                    float:left;
+                    position:relative;
+                    a{
+                        line-height:30px;
+                        &:hover{
+                            color:#B90000;
+                        }
+                    }
+                    &:nth-child(1) a{
+                        padding-right:15px;
+                    }
+                    &:nth-child(1) span,&:nth-child(3) span,&:nth-child(4) span{
+                        position:absolute;
+                        display:block;
+                        width:8px;
+                        height:13px;    
+                        top:14px;
+                        right:8px;
+                        background: url('img/spirits.png') no-repeat -189px -844px;
+                    }
+                    &:nth-child(1):hover{
+                        background-color: #FFF;
+                    }
+                    &:nth-child(1):hover #sc{
+                        display:block;
+                    }
+                    #sc{
+                        position:absolute;
+                        background-color: #FFF;
+                        display:none;
+                    }
+                    &:nth-child(3):hover{
+                        background-color: #FFF;
+                    }
+                    &:nth-child(3):hover #gg{
+                        display:block;
+                    }
+                    &:nth-child(4):hover{
+                        background-color: #FFF;
+                    }
+                    &:nth-child(4):hover #more{
+                        display:block;
+                    }
+                    #gg{
+                        padding:10px;
+                        top:30px;
+                        right:0;
+                        display:none;
+                        position:absolute;
+                        z-index:1000;
+                        width:150px;
+                        height:100px;
+                        background-color: #FFF;
+                        a{
+                            height:20px;
+                            line-height:20px;
+                            text-align:left;
+                            width:150px;
+                            font-size:12px;
+                        }
+                        a:nth-of-type(1){
+                            color:red;
+                        }
+                    }
+                    #more{
+                        padding:10px;
+                        top:30px;
+                        right:0;
+                        display:none;
+                        position:absolute;
+                        z-index:1000;
+                        width:80px;
+                        height:40px;
+                        background-color: #FFF;
+                        a{
+                            height:20px;
+                            line-height:20px;
+                            text-align:left;
+                            width:80px;
+                            font-size:12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

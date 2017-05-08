@@ -1,0 +1,202 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+#foot {
+  margin-top: 30px;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background-color: #F4F4F4;
+}
+
+#foot .container #foot-t {
+  width: 100%;
+  height: 190px;
+  position: relative;
+}
+
+#foot .container #foot-t #bz {
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  height: 46px;
+}
+
+#foot .container #foot-t #bz ul li {
+  float: left;
+  width: 25%;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  position: relative;
+}
+
+#foot .container #foot-t #bz ul li span {
+  position: absolute;
+  top: 7px;
+  left: 62px;
+  width: 30px;
+  height: 32px;
+  background: url("img/spirits.png") no-repeat 0 -37px;
+}
+
+#foot .container #foot-t #bz ul li a {
+  display: inline-block;
+  color: #666;
+  font-size: 16px;
+}
+
+#foot .container #foot-t #bz ul li a:hover {
+  color: red;
+}
+
+#foot .container #foot-t .foot-list ul {
+  margin-top: 20px;
+  width: 150px;
+  height: 110px;
+  float: left;
+}
+
+#foot .container #foot-t .foot-list ul li {
+  color: #656565;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#foot .container #foot-t .foot-list ul li a {
+  display: block;
+  font-weight: normal;
+  color: #000;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+#foot .container #foot-t .foot-list ul li a:hover {
+  color: red;
+}
+
+#foot .container #foot-t .foot-list ul li:nth-of-type(1) {
+  margin-bottom: 10px;
+}
+
+#foot .container #foot-t .foot-list .ul1 {
+  width: 200px;
+}
+
+#foot .container #foot-t .foot-list .ul1 li {
+  position: relative;
+}
+
+#foot .container #foot-t .foot-list .ul1 li span {
+  display: block;
+  width: 24px;
+  height: 20px;
+  background: url("img/newbase.png") no-repeat -317px -30px;
+  position: absolute;
+}
+
+#foot .container #foot-t .foot-list .ul1 li a {
+  display: inline-block;
+  color: red;
+}
+
+#foot .container #foot-t .foot-list .ul1 li:nth-of-type(2) a {
+  margin-left: 27px;
+  margin-bottom: 15px;
+}
+
+#foot .container #foot-t .foot-code {
+  position: absolute;
+  top: 73px;
+  right: 123px;
+}
+
+#foot .container #foot-t .foot-code1 {
+  position: absolute;
+  top: 73px;
+  right: 24px;
+}
+
+#foot-bot {
+  width: 100%;
+  height: 110px;
+  background-color: #000;
+  overflow: hidden;
+}
+
+#foot-bot .container .foot-logo {
+  float: left;
+  width: 340px;
+  margin-top: 35px;
+}
+
+#foot-bot .container .foot-bot-r {
+  float: right;
+  height: 110px;
+  width: 850px;
+}
+
+#foot-bot .container .foot-bot-r ul {
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+#foot-bot .container .foot-bot-r ul li {
+  float: right;
+}
+
+#foot-bot .container .foot-bot-r ul li a {
+  display: block;
+  width: 55px;
+  margin: 0 5px;
+  border-right: 1px solid #fff;
+  font-size: 12px;
+  color: #fff;
+}
+
+#foot-bot .container .foot-bot-r ul li:nth-of-type(1) a {
+  border: none;
+}
+
+#foot-bot .container .foot-bot-r p {
+  margin: 7px;
+  display: block;
+  float: right;
+  color: #fff;
+  font-size: 12px;
+}
+
+#foot-bot .container .foot-bot-r .yz {
+  width: 100%;
+  height: 50px;
+}
+
+#foot-bot .container .foot-bot-r .yz img {
+  float: right;
+  margin-left: 5px;
+  margin-right: 5px;
+}
