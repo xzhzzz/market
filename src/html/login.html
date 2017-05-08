@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title>注册界面</title>
+	<title>登陆界面</title>
 	<link rel="stylesheet" type="text/css" href="../css/header.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/login.css"/>
 	<script src="../lib/require.js" data-main="../js/login.js"></script>
@@ -24,17 +24,18 @@
 				<a href="reg.html" id="right">注册</a>
 			</div>
 			<div class="sr">
-				<span>用户名</span>
-				<input type="text" placeholder="请输入您的用户名" id="usename" required/>
+				<span>邮箱</span>
+				<input type="text" placeholder="请输入您注册的邮箱" id="email" required/>
 			</div>
 			<div class="sr">
 				<span>密码</span>
-				<input type="password" id="psw" placeholder="请输入您的密码" required/>
+				<input type="password" id="password" placeholder="请输入您的密码" required/>
 			</div>
 			<div class="wjmm">
 				<a href="">忘记密码?</a>
 			</div>
-			<input type="submit" id="btn-send" value="点击登录"/>		
+			<button id="btn-send" type="button">点击登陆</button>
+			<!--<input type="submit" id="btn-send" value="点击登录"/>	-->	
 			<p>使用合作网站账号登录优购：</p>
 			<div id="icon-reg">
 				<ul>
