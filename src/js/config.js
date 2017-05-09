@@ -1,9 +1,11 @@
 requirejs.config({
 	paths:{
 		"jquery":"../lib/jquery-3.1.1",
-		"jqueryUi":"../lib/jquery-ui-1.12.1.custom/jquery-ui"
+		"jqueryUi":"../lib/jquery-ui-1.12.1.custom/jquery-ui",
+		"jqueryFdj":"../lib/jq-zoom/fdzoom"
 	},
 	shim:{
-		"jqueryUi":["jquery"]
+		"jqueryUi":["jquery"],
+		"jqueryFdj":["jquery"]
 	}
 });
