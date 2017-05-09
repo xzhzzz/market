@@ -5,7 +5,7 @@
 			position:'bottom',
 
 			//大图与小图的间距
-			gap:-10,
+			gap:20,
 
 			//放大区域的大小
 			width:400,
@@ -53,8 +53,8 @@
 
             if(opt.position === 'right'){
             	$bigZoom.css({
-            		left:$smallPic.offset().left + $smallPic.outerWidth() + opt.gap,
-            		top:$smallPic.offset().top
+            		left:$smallPic.outerWidth() + opt.gap,
+            		top:0
             	});
             }else if(opt.position === 'left'){
             	$bigZoom.css({
