@@ -1,7 +1,6 @@
 requirejs(["config"],function(){
 	requirejs(["jquery","jqueryUi"],function($){
 		$(function(){
-			console.log($('#header'));
 			$('#header').load('header.html #top-menu');
 		});
 		
@@ -13,12 +12,13 @@ requirejs(["config"],function(){
 		        },function(response){
 		          var $obj = eval('(' + response + ')');
 		          if($obj.state){
+		          	alert('登录成功！')
 		            window.location.href = '../index.html';
 		          } else {
 		            alert($obj.message);
 		          }
 		        })        
-		     })
+		    })
 		});
 	});
 });

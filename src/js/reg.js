@@ -42,6 +42,7 @@ requirejs(["config"],function(){
 					console.log($obj)
 					if($obj.state){
 						alert('注册成功！');
+						window.location.href = '../html/login.html';
 					}else{
 						alert($obj.message);
 					}
