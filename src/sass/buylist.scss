@@ -33,23 +33,14 @@
             border:1px solid #ccc;
             margin-right: 8px;
         }
+        .hover{
+            border:1px solid red; 
+        }
         margin-bottom:10px;
     }
     p{
         font-size: 12px;
     } 
-    #big-img{
-        position: absolute;
-        width: 400px;
-        height: 400px;
-        overflow: hidden;
-        top:0;
-        left:500px;
-        display: none;
-        img{
-            position:absolute;
-        }
-    }
 }
 #goods-r{
     float:left;
@@ -122,6 +113,9 @@
                     border:1px solid red;
                 }
             }
+            .click{
+                border: 1px solid red;
+            }
         }
         .size{
             margin-top: 20px;
@@ -145,6 +139,9 @@
                     border:1px solid red;
                 }
             }
+            .click{
+                border: 1px solid red;
+            }
         }
         .num{
             margin-top: 30px;
@@ -154,7 +151,10 @@
                 display: inline-block;
                 margin-right:5px;  
             } 
-            .detail{
+            .detail-c{
+                color: red; 
+            }
+            .detail-n{
                 color: red; 
             }
         }
