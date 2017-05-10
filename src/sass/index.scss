@@ -295,6 +295,9 @@ body{
 				height:18px;
 				background: url('img/spirits.png') no-repeat -92px -533px;
 			}
+			a{
+			    color:#000;
+			}
 			#num{
 				margin-top:6px;
 				font-size:12px;
@@ -1080,5 +1083,37 @@ body{
                 }
             }
         }  
+    }
+}
+#side{
+    position: fixed;
+    right: 0;
+    top:0;
+    height: 100%;
+    width: 30px;
+    background-color: #000;
+    .Bcar{
+        cursor: pointer;
+        position:absolute;
+        top:260px;
+        box-sizing: border-box;
+        display: inline-block;
+        height: 100px;   
+        width: 30px;
+        padding:0 7px;
+        color:#fff;
+        &:hover{
+            background-color: #CC0000;
+        }
+        &:hover span{
+            background: url('../css/img/buycar1.png') no-repeat -8px -10px;
+        }
+        span{
+            margin-top:15px;
+            display: inline-block;
+            width: 19px;
+            height: 15px;
+            background: url('../css/img/buycar.png') no-repeat -8px -10px;
+        };
     }
 }

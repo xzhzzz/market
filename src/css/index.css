@@ -380,6 +380,10 @@ body {
   background: url("img/spirits.png") no-repeat -92px -533px;
 }
 
+#top #top-buy #buycar a {
+  color: #000;
+}
+
 #top #top-buy #buycar #num {
   margin-top: 6px;
   font-size: 12px;
@@ -1284,4 +1288,41 @@ body {
   float: right;
   margin-left: 5px;
   margin-right: 5px;
+}
+
+#side {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 30px;
+  background-color: #000;
+}
+
+#side .Bcar {
+  cursor: pointer;
+  position: absolute;
+  top: 260px;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 100px;
+  width: 30px;
+  padding: 0 7px;
+  color: #fff;
+}
+
+#side .Bcar:hover {
+  background-color: #CC0000;
+}
+
+#side .Bcar:hover span {
+  background: url("../css/img/buycar1.png") no-repeat -8px -10px;
+}
+
+#side .Bcar span {
+  margin-top: 15px;
+  display: inline-block;
+  width: 19px;
+  height: 15px;
+  background: url("../css/img/buycar.png") no-repeat -8px -10px;
 }

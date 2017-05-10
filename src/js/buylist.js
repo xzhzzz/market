@@ -43,7 +43,8 @@ requirejs(["config"],function(){
 				if($(".detail-c").html() !== '' && $(".detail-n").html()!==''){
 					$('#nor-img').append($('#nor-img img').clone().addClass('moveImg').css({'position':'absolute','z-index':100000,'top':0,'left':0}));
 					//top=购物车偏移高度-图片的偏移高度+滚动条滚动距离
-					$('.moveImg').stop(true).animate({'width':0,'left':$('.Bcar').offset().left-20,'top':$('.Bcar').position().top-180+window.scrollY},function(){
+					//left=购物车偏移宽度-norimg的图片的偏移宽度
+					$('.moveImg').stop(true).animate({'width':0,'left':$('.Bcar').offset().left-$('#nor-img').offset().left,'top':$('.Bcar').position().top-180+window.scrollY},function(){
 						//动画效果完成后移除克隆的元素
 						$('.moveImg').remove();
 					});
