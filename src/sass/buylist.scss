@@ -91,7 +91,7 @@
     .sele{
         margin-top:40px;
         width: 100%;
-        background-color: #EEEEEE;
+        background-color: #F8F8F8;
         height: 230px;
         overflow: hidden;
         box-sizing: border-box;
@@ -200,15 +200,15 @@
     height: 100%;
     width: 30px;
     background-color: #000;
-    text-align: center;
     .Bcar{
         cursor: pointer;
+        position:absolute;
+        top:260px;
         box-sizing: border-box;
-        margin-top: 260px;
         display: inline-block;
         height: 100px;   
         width: 30px;
-        padding:0 5px;
+        padding:0 7px;
         color:#fff;
         &:hover{
             background-color: #CC0000;
