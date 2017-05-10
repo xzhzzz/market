@@ -25,3 +25,234 @@ html, body {
   width: 1190px;
   margin: 0 auto;
 }
+
+#con-top {
+  width: 100%;
+  height: 70px;
+}
+
+#con-top .top-logo {
+  float: left;
+  margin-top: 11px;
+  width: 360px;
+  height: 47px;
+  display: inline-block;
+  background: url("img/logo.jpg") no-repeat 0 0;
+}
+
+#con-top ul {
+  height: 100%;
+  float: right;
+}
+
+#con-top ul li {
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 25px;
+  float: left;
+  display: inline-block;
+  width: 200px;
+  height: 20px;
+  background-color: #eee;
+}
+
+#con-top ul li:nth-of-type(1) {
+  color: #fff;
+  background-color: #FC4E00;
+}
+
+#con-mid {
+  height: 200px;
+  border: 1px solid #f1f1f1;
+}
+
+#con-mid .carlist {
+  position: relative;
+  width: 310px;
+  height: 100px;
+  margin: 50px auto;
+  padding-left: 57px;
+}
+
+#con-mid .carlist span {
+  position: absolute;
+  width: 70px;
+  height: 56px;
+  top: -23px;
+  left: -15px;
+  display: block;
+  background: url("img/carlist.png") no-repeat -30px -153px;
+}
+
+#con-mid .carlist p {
+  font-size: 12px;
+}
+
+#con-mid .carlist p:nth-of-type(1) {
+  color: #999;
+  font-size: 14px;
+}
+
+#con-mid .carlist a:nth-of-type(1) {
+  margin: 10px 0;
+  text-align: center;
+  line-height: 24px;
+  display: block;
+  color: #666;
+  font-weight: bold;
+  background-color: #FFDFBF;
+  width: 80px;
+  height: 24x;
+  font-size: 14px;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+}
+
+#con-mid .carlist a:nth-of-type(1):hover {
+  color: red;
+}
+
+#con-mid .carlist a {
+  display: block;
+  font-size: 12px;
+  color: blue;
+}
+
+#con-mid1 {
+  border: 1px solid #f1f1f1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#con-mid1 #con-title {
+  border-bottom: 1px solid #f1f1f1;
+  height: 45px;
+  line-height: 45px;
+}
+
+#con-mid1 #con-title span {
+  width: 140px;
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  display: inline-block;
+}
+
+#con-mid1 #con-title span input {
+  outline: none;
+}
+
+#con-mid1 #con-title span:nth-of-type(1) {
+  width: 120px;
+}
+
+#con-mid1 #con-title span:nth-of-type(2) {
+  width: 300px;
+}
+
+#con-mid1 #seleAll {
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+#con-mid1 #seleAll span {
+  width: 120px;
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  display: inline-block;
+}
+
+#con-mid1 #seleAll span input {
+  outline: none;
+}
+
+#con-mid1 #seleAll span a {
+  color: #999;
+  font-size: 12px;
+}
+
+#con-mid1 #seleAll span:nth-of-type(3) {
+  cursor: pointer;
+}
+
+#con-mid1 #totalM {
+  height: 55px;
+}
+
+#con-mid1 #totalM #btn-home {
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  border-radius: 2px;
+  border: 1px solid #FFB973;
+  background-color: #FFDFBF;
+  color: #666;
+  margin-top: 7px;
+  margin-left: 20px;
+}
+
+#con-mid1 #totalM a {
+  display: inline-block;
+  margin: 0 40px;
+  color: blue;
+  font-size: 12px;
+}
+
+#con-mid1 #totalM a:hover {
+  color: red;
+}
+
+#con-mid1 #totalM span {
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  float: right;
+  margin-top: 11px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#con-mid1 #totalM span p {
+  margin-left: 5px;
+  display: inline-block;
+  color: red;
+  font-size: 18px;
+}
+
+#con-mid1 #totalM #btn-next {
+  cursor: pointer;
+  float: right;
+  height: 55px;
+  width: 120px;
+  border: 0;
+  color: #fff;
+  background-color: #FF7103;
+}
+
+#con-bot {
+  margin-top: 10px;
+  height: 100px;
+  text-align: right;
+  width: 100%;
+}
+
+#con-bot p {
+  color: #999;
+  margin: 5px 0;
+  font-size: 12px;
+  display: inline-block;
+  width: 100%;
+}
+
+#con-bot p a {
+  font-size: 12px;
+  color: #999;
+}
+
+#con-bot p a:hover {
+  color: red;
+}
