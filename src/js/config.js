@@ -4,7 +4,8 @@ requirejs.config({
 		"jqueryUi":"../lib/jquery-ui-1.12.1.custom/jquery-ui",
 		"jqueryFdj":"../lib/jq-zoom/fdzoom",
 		"jquerycookie":"../lib/jquery.cookie",
-		"commom":"../lib/common"
+		"commom":"../lib/common",
+		"header":"../js/header"
 	},
 	shim:{
 		"jqueryUi":["jquery"],

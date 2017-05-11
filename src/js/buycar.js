@@ -53,7 +53,7 @@ requirejs(["config"],function(){
    				}
    				$.cookie('carlist',JSON.stringify(buylist),{path:'/'})
    				$(this).parent().remove();
-   				window.location.reload()
+   				window.location.reload();
 			});
 			//删除选中商品按钮
 			$('#seleAll .del').on('click',function(){

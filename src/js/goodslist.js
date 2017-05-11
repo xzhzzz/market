@@ -3,6 +3,7 @@ requirejs(['config'],function(){
 		$(function(){
 			$('#header').load('header.html');
 			$('#footer').load('footer.html');
+			$.getScript('../js/header.js');
 		});
 		//获取后台json数据
 		$(function(){

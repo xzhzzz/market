@@ -1,9 +1,10 @@
 requirejs(["config"],function(){
-	requirejs(["jquery","jqueryUi","jqueryFdj","jquerycookie"],function($){
+	requirejs(["jquery","header","jqueryUi","jqueryFdj","jquerycookie"],function($,com){
 		//加载头尾部
 		$(function(){
 			$('#header').load('header.html');
 			$('#footer').load('footer.html');
+			$.getScript('../js/header.js');
 		});
 		
 		//放大镜
@@ -61,6 +62,7 @@ requirejs(["config"],function(){
 	   			   	}
 					if(!hasCarList){
 						var good={
+							pageUrl:window.location.href,
 							goodId:$('#goodId').html(),
 							goodName:$('#goods-r h2').html(),
 							goodPrice:$('.price').text(),

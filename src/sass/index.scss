@@ -210,7 +210,7 @@ body{
 }
 
 #top{
-    overflow: hidden;
+    height: 125px;
 	#logo{
 		float:left;
 		height:125px;
@@ -286,7 +286,7 @@ body{
 			box-sizing:border-box;
 			border:1px solid #ccc;
 			background-color: #FFF;
-			span{
+			#car-logo{
 				margin-top:6px;
 				margin-left:10px;
 				float:left;
@@ -326,9 +326,95 @@ body{
 				display:none;
 				box-shadow:1px 1px 2px 0px #999;
 			}
-		}
-		#buycar:hover #buy-content{
-			display:block;
+			#buy-content1{
+			    display: none;
+			    font-size:12px;
+                width:500px;
+                position:absolute;
+                z-index: 200;
+                top:32px;
+                right:-1px;
+                background-color: #FFF;
+                border:1px solid #ddd;
+                box-shadow:1px 1px 2px 0px #999;
+                .section2{
+                    height:50px;
+                    border-bottom:1px dotted #f1f1f1;
+                    img{
+                        margin:5px;
+                        float:left;
+                        width: 40px;
+                        height: 40px;
+                        box-sizing: border-box;
+                        border: 1px solid #f1f1f1;
+                    }
+                    .cont-l{
+                        margin-top: 5px;
+                        margin-left: 10px;
+                        float: left;
+                        width: 340px;
+                        .goodname{
+                            a{
+                                color: blue;
+                                font-size: 12px;
+                            }  
+                        }
+                        .goodcolor,.goodsize{
+                            display: inline-block;
+                            font-size: 12px;
+                            span{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    .cont-mid{
+                        margin-top:15px;
+                        width: 50px;
+                        float: left;
+                        color:red;
+                    }
+                    .cont-r{
+                        margin-top:10px;
+                        cursor: pointer;
+                        width: 50px;
+                        float: left;
+                        text-align: center;
+                        .num1{
+                            font-size: 12px;
+                            display: block;
+                        }
+                        .del{
+                            font-size: 12px;
+                            color:blue;
+                        } 
+                    }
+                }
+                .content-foot{
+                    height: 30px;
+                    background-color: #f1f1f1;
+                    .num1{
+                        font-size: 12px;
+                        display: block;
+                        float: left;
+                        margin-left: 5px;
+                        margin-top:9px;    
+                    }
+                    a{
+                        font-size: 12px;
+                        display: block;
+                        float: right;
+                        color:#fff;
+                        margin-top:5px;
+                        margin-right: 5px;
+                        border-radius: 2px;
+                        background-color: #FFB973;
+                        text-align: center;
+                        width: 100px;
+                        height: 20px;
+                        line-height: 20px;
+                    }
+                }
+			}
 		}
 		>p{
 		   margin-top: 10px;
