@@ -82,6 +82,7 @@
 }
 //cookie后
 #con-mid1{
+    display:none;
     border: 1px solid #f1f1f1;
     width: 100%;
     box-sizing: border-box;
@@ -106,8 +107,54 @@
             width:300px;
         }
     }
+    .changC{
+        background-color: #fffdf4;
+    }
     #con-goodlist{
-    
+        width:100%;
+        .section1{
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid #f1f1f1;
+            span{
+                box-sizing: border-box;
+                padding-top: 50px;
+                float: left;
+                height: 120px;
+                width:147px;
+                text-align:center;
+                color:#999;
+                font-size: 12px;
+                display:block;
+                input{
+                    outline: none;
+                }
+
+            }
+            img{
+                width: 60px;
+                height: 60px;
+                position: absolute;
+                border: 1px solid #efefef;
+                top: 26px;
+                left:88px;
+             }
+            span:nth-of-type(1){
+                width:120px;
+            }
+            span:nth-of-type(2){
+                box-sizing: border-box;
+                padding-left:40px ;
+                padding-right: 27px;
+                width:300px;
+            }  
+            .opera{
+                cursor: pointer;
+                &:hover{
+                    color: red;
+                }
+            }   
+        }
     }
     #seleAll{
         height: 45px;

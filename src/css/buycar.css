@@ -120,6 +120,7 @@ html, body {
 }
 
 #con-mid1 {
+  display: none;
   border: 1px solid #f1f1f1;
   width: 100%;
   box-sizing: border-box;
@@ -149,6 +150,64 @@ html, body {
 
 #con-mid1 #con-title span:nth-of-type(2) {
   width: 300px;
+}
+
+#con-mid1 .changC {
+  background-color: #fffdf4;
+}
+
+#con-mid1 #con-goodlist {
+  width: 100%;
+}
+
+#con-mid1 #con-goodlist .section1 {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+#con-mid1 #con-goodlist .section1 span {
+  box-sizing: border-box;
+  padding-top: 50px;
+  float: left;
+  height: 120px;
+  width: 147px;
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  display: block;
+}
+
+#con-mid1 #con-goodlist .section1 span input {
+  outline: none;
+}
+
+#con-mid1 #con-goodlist .section1 img {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  border: 1px solid #efefef;
+  top: 26px;
+  left: 88px;
+}
+
+#con-mid1 #con-goodlist .section1 span:nth-of-type(1) {
+  width: 120px;
+}
+
+#con-mid1 #con-goodlist .section1 span:nth-of-type(2) {
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 27px;
+  width: 300px;
+}
+
+#con-mid1 #con-goodlist .section1 .opera {
+  cursor: pointer;
+}
+
+#con-mid1 #con-goodlist .section1 .opera:hover {
+  color: red;
 }
 
 #con-mid1 #seleAll {
