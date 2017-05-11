@@ -253,14 +253,15 @@ html, body {
   margin-left: 20px;
 }
 
-#con-mid1 #totalM a {
+#con-mid1 #totalM .delall {
+  cursor: pointer;
   display: inline-block;
   margin: 0 40px;
   color: blue;
   font-size: 12px;
 }
 
-#con-mid1 #totalM a:hover {
+#con-mid1 #totalM .delall:hover {
   color: red;
 }
 

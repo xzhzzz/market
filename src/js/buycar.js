@@ -1,5 +1,5 @@
 requirejs(["config"],function(){
-	requirejs(["jquery","jqueryUi","jquerycookie"],function($){
+	requirejs(["jquery","common","jqueryUi","jquerycookie"],function($,com){
 		$(function(){
 			$('#header').load('header.html #top-menu');
 			$('#footer').load('footer.html');
@@ -7,33 +7,10 @@ requirejs(["config"],function(){
 		
 		$(function(){
 			//根据cookie生成样式
-			var buylist;
-			function createbuy(){
-	   			buylist = $.cookie('carlist');
-		   		buylist = buylist ? JSON.parse(buylist):[];
-		   		//当有cookie时隐藏#con-mid,显示#con-mid1
-		   		if(buylist.length>0){
-		   			$('#con-mid').css({'display':'none'});
-			   		console.log(buylist);
-			   		$('#con-mid1').css({'display':'block'});
-			   		var res = buylist.map(function(item){
-			   			return `<div class="section1">
-									<span class="check"><input type="checkbox"/></span>
-									<img src="${item.goodUrl}" alt="" class="goodImg"/>
-									<span class="goodName">${item.goodName}</span>
-									<span class="color-s">${item.goodColor}&nbsp;${item.goodSize}码</span>
-									<span class="one-price">${item.goodPrice}</span>
-									<span class="quan">${item.quan}</span>
-									<span class="totalprice">${item.goodPrice*item.quan}</span>
-									<span class="opera">删除</span>
-								</div>`
-			   		}).join('');
-				   	$.cookie('carlist',JSON.stringify(buylist),{path:"/",expires:7})
-					$('#con-goodlist').append(res);
-				}
-	   		}
-	   		createbuy();
-	   		console.log($('.all'))
+			var buylist ;
+			if($.cookie('carlist') != 'NULL'){
+	   			buylist=com.createBuy();
+			}		
 	   		//全选
 	   		$('.all').on('click',function(){
 	   			var checkAll = $('.all').prop('checked');
@@ -68,18 +45,47 @@ requirejs(["config"],function(){
 			})
    			//删除按钮
 			$('#con-goodlist').on('click','.opera',function(){
-				$(this).parent().remove();
+				console.log(buylist)
+   				for(var i=0;i<buylist.length;i++){
+   					if(buylist[i].goodColor+buylist[i].goodSize == $(this).parent().children('.color-s').text()){
+   						buylist.splice(i,1);
+   					}
+   				}
+   				$.cookie('carlist',JSON.stringify(buylist),{path:'/'})
+   				$(this).parent().remove();
+   				window.location.reload()
 			});
-			//删除全部按钮
-			$('#seleAll .delall').on('click',function(){
-				if($('.all1').prop('checked')){
-					$('#con-goodlist .section1').remove();
-					$('#con-mid').css({'display':'block'});
-					$('#con-mid1').css({'display':'none'});
-				}else{
-					alert('请勾选全选按钮');
-				}
+			//删除选中商品按钮
+			$('#seleAll .del').on('click',function(){
+				$('.section1').each(function(idx,ele){
+					if($(ele).children('.check').children('input').prop('checked')){
+						for(var i=0;i<buylist.length;i++){
+		   					if(buylist[i].goodColor+buylist[i].goodSize == $(ele).children('.color-s').text()){
+		   						buylist.splice(i,1);
+		   						console.log(1)
+		   					}
+		   				}
+						console.log(buylist)
+		   				$.cookie('carlist',JSON.stringify(buylist),{path:'/'});
+						$(ele).remove();
+						window.location.reload();
+		   			}	
+				});
 			});
+			
+			//删除所有商品并删除cookie
+			$('#totalM .delall').on('click',function(){
+				$('#con-goodlist .section1').remove();
+				$.removeCookie('carlist',{path:'/'});
+				window.location.reload();
+			});
+				
+			//总金额
+			var allprice=0;
+			$('.totalprice').each(function(idx,ele){
+				allprice+=parseInt($(ele).text());
+			});
+			$('.allprice').text('￥'+allprice);
 		});
 	});
 });

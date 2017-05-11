@@ -37,7 +37,6 @@ requirejs(["config"],function(){
 				$(this).addClass('click');
 				$('.num .detail-n').html($(this).html());	
 			});
-			console.log($('.price').html());
 			//购物车效果
 			$("#btn-buycar").on('click',function(){
 				if($(".detail-c").html() !== '' && $(".detail-n").html()!==''){
