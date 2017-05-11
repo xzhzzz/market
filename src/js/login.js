@@ -1,5 +1,5 @@
 requirejs(["config"],function(){
-	requirejs(["jquery","jqueryUi"],function($){
+	requirejs(["jquery","jqueryUi","jquerycookie"],function($){
 		$(function(){
 			$('#header').load('header.html #top-menu');
 		});
@@ -12,6 +12,7 @@ requirejs(["config"],function(){
 		        },function(response){
 		          var $obj = eval('(' + response + ')');
 		          if($obj.state){
+		          	$.cookie('Success',$('#email').val(),{path:'/',expires:7});
 		          	alert('登录成功！')
 		            window.location.href = '../index.html';
 		          } else {

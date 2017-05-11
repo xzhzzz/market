@@ -144,6 +144,7 @@ html, body {
 }
 
 #top-menu #top-menu-main #top-menu-r #login {
+  position: relative;
   float: left;
   width: 110px;
   display: inline-block;
@@ -161,6 +162,32 @@ html, body {
 #top-menu #top-menu-main #top-menu-r #login a:nth-child(2) {
   border-right: 1px solid #ddd;
   padding-right: 10px;
+}
+
+#top-menu #top-menu-main #top-menu-r #login-success {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -23px;
+}
+
+#top-menu #top-menu-main #top-menu-r #login-success span {
+  font-size: 12px;
+  height: 15px;
+  line-height: 15px;
+  margin-top: 8px;
+  width: 40px;
+  display: inline-block;
+}
+
+#top-menu #top-menu-main #top-menu-r #login-success #name {
+  cursor: pointer;
+  width: 70px;
+  color: red;
+}
+
+#top-menu #top-menu-main #top-menu-r #login-success #out {
+  cursor: pointer;
 }
 
 #top-menu #top-menu-main #top-menu-r ul {

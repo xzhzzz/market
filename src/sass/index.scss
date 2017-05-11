@@ -89,6 +89,7 @@ body{
 			}
 		}
 		#top-menu-r{
+		    position:relative;
 			float:right;
 			a{	
 				font-size:12px;
@@ -114,6 +115,28 @@ body{
 						padding-right:10px;
 					}
 				}
+			}
+			#login-success{
+			    display: none;
+			    position:absolute;
+			    top:0;
+			    left:-23px;
+			    span{
+			        font-size: 12px;
+			        height:15px;
+                    line-height:15px;
+                    margin-top:8px;
+                    width:40px;
+                    display:inline-block;
+			    }
+			    #name{
+			       cursor: pointer;
+			       width: 70px;
+			       color: red;
+			    }
+			    #out{
+			        cursor: pointer;
+			    }
 			}
 			ul{
 				float:left;
