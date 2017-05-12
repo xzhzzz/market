@@ -143,7 +143,7 @@ html, body {
   margin-top: 40px;
   width: 100%;
   background-color: #F8F8F8;
-  height: 230px;
+  height: 270px;
   overflow: hidden;
   box-sizing: border-box;
   padding-left: 10px;
@@ -203,6 +203,46 @@ html, body {
 }
 
 #goods-r .sele .size .click {
+  border: 1px solid red;
+}
+
+#goods-r .sele .qyt {
+  margin-top: 20px;
+  display: block;
+}
+
+#goods-r .sele .qyt p {
+  font-size: 12px;
+  display: inline-block;
+}
+
+#goods-r .sele .qyt span {
+  margin: 0 5px;
+  text-align: center;
+  line-height: 20px;
+  display: inline-block;
+  font-size: 12px;
+  width: 34px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #DDDDDD;
+}
+
+#goods-r .sele .qyt .sub {
+  width: 23px;
+  cursor: pointer;
+}
+
+#goods-r .sele .qyt .sub:hover {
+  border: 1px solid red;
+}
+
+#goods-r .sele .qyt .add {
+  width: 23px;
+  cursor: pointer;
+}
+
+#goods-r .sele .qyt .add:hover {
   border: 1px solid red;
 }
 

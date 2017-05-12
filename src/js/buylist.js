@@ -69,7 +69,7 @@ requirejs(["config"],function(){
 							goodColor:$('.color .click').attr('title'),
 							goodSize:$('.size .click').html(),
 							goodUrl:$('#nor-img img').attr('src'),
-							quan:1
+							quan:$('.goodqty').html()
 						}
 						$carlist.push(good);
 					}
@@ -79,6 +79,20 @@ requirejs(["config"],function(){
 				}else{
 					alert('请选择您所购买的商品的颜色以及尺码！！');
 				}
+			});
+			
+			//数量增减
+			var qty=1;
+			$('.sub').on('click',function(){
+				qty--;
+				if(qty<1){
+					qty=1;
+				};
+				$('.goodqty').html(qty);
+			});
+			$('.add').on('click',function(){
+				qty++;
+				$('.goodqty').html(qty);
 			});
 		});
 		

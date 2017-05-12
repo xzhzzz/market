@@ -86,5 +86,11 @@ requirejs(["config"],function(){
 			});
 			$('.allprice').text('￥'+allprice);
 		});
+		
+		$(function(){
+			$('#btn-next').on('click',function(){
+				alert('此功能还没有开发！')
+			});
+		});
 	});
 });
