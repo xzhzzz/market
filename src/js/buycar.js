@@ -62,7 +62,6 @@ requirejs(["config"],function(){
 						for(var i=0;i<buylist.length;i++){
 		   					if(buylist[i].goodColor+buylist[i].goodSize == $(ele).children('.color-s').text()){
 		   						buylist.splice(i,1);
-		   						console.log(1)
 		   					}
 		   				}
 						console.log(buylist)

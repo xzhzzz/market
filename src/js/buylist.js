@@ -75,6 +75,7 @@ requirejs(["config"],function(){
 					}
 					$.cookie('carlist',JSON.stringify($carlist),{path:"/",expires:7});
 					console.log($.cookie('carlist'));
+					$.getScript('../js/header.js');
 				}else{
 					alert('请选择您所购买的商品的颜色以及尺码！！');
 				}

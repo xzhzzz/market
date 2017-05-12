@@ -26,7 +26,7 @@ requirejs(["config"],function(){
 								</div>`
 			   		}).join('');
 				   	$.cookie('carlist',JSON.stringify(buylist),{path:"/",expires:7});
-					$('#buy-content1').prepend(res);
+					$('.container-main').html(res);
 					$('.content-foot .num1').html("共"+buylist.length+"件商品");
 					$('#num').html("购物车("+buylist.length+")件");
 				};	
@@ -53,6 +53,26 @@ requirejs(["config"],function(){
    				$.cookie('carlist',JSON.stringify(buylist),{path:'/'});
    				$(this).parent().parent().remove();
    				window.location.reload();
+			});
+		});
+		//用户登录状态
+		$(function(){
+			var success=$.cookie('Success');
+			if(success){
+				$('#login').css({'display':'none'});
+				$('#login-success').css({'display':'block'});
+				$('#name').html(success)
+			}else{
+				$('#login').css({'display':'block'});
+				$('#login-success').css({'display':'none'});
+			};
+			
+			$('#out').on('click',function(){
+				$.removeCookie('Success',{path:'/'});
+				alert('您已退出帐号');
+				$('#login').css({'display':'block'});
+				$('#login-success').css({'display':'none'});
+				
 			});
 		});
 	});

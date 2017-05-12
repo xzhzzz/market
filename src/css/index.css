@@ -172,7 +172,7 @@ body {
   display: none;
   position: absolute;
   top: 0;
-  left: -23px;
+  left: -136px;
 }
 
 #top-menu #top-menu-main #top-menu-r #login-success span {
@@ -186,7 +186,7 @@ body {
 
 #top-menu #top-menu-main #top-menu-r #login-success #name {
   cursor: pointer;
-  width: 70px;
+  width: 90px;
   color: red;
 }
 

@@ -2,7 +2,6 @@ requirejs(["config"],function(){
 	requirejs(["jquery","jquerycookie","jqueryUi"],function($){
 		//轮播图
 		$(function(){
-			console.log($('#banner-r img').length-1)
 			$('.cir span').first().css({'background-color':'red'});
 			$('#banner-r img').each(function(idx,ele){
 				if(idx>0){
@@ -150,6 +149,24 @@ requirejs(["config"],function(){
    				$.cookie('carlist',JSON.stringify(buylist),{path:'/'});
    				$(this).parent().parent().remove();
    				window.location.reload();
+			});
+		});
+		
+		//登录状态
+		$(function(){
+			var success=$.cookie('Success');
+			if(success){
+				$('#login').css({'display':'none'});
+				$('#login-success').css({'display':'block'});
+				$('#name').html(success)
+			}
+			
+			$('#out').on('click',function(){
+				$.removeCookie('Success',{path:'/'});
+				alert('您已退出帐号');
+				$('#login').css({'display':'block'});
+				$('#login-success').css({'display':'none'});
+				
 			});
 		});
 	});

@@ -131,6 +131,7 @@ html, body {
 }
 
 #top-menu #top-menu-main #top-menu-r {
+  position: relative;
   float: right;
 }
 
@@ -168,7 +169,7 @@ html, body {
   display: none;
   position: absolute;
   top: 0;
-  left: -23px;
+  left: -136px;
 }
 
 #top-menu #top-menu-main #top-menu-r #login-success span {
@@ -182,7 +183,7 @@ html, body {
 
 #top-menu #top-menu-main #top-menu-r #login-success #name {
   cursor: pointer;
-  width: 70px;
+  width: 90px;
   color: red;
 }
 
@@ -451,12 +452,12 @@ html, body {
   box-shadow: 1px 1px 2px 0px #999;
 }
 
-#top #top-buy #buycar #buy-content1 .section2 {
+#top #top-buy #buycar #buy-content1 .container-main .section2 {
   height: 50px;
   border-bottom: 1px dotted #f1f1f1;
 }
 
-#top #top-buy #buycar #buy-content1 .section2 img {
+#top #top-buy #buycar #buy-content1 .container-main .section2 img {
   margin: 5px;
   float: left;
   width: 40px;
@@ -465,35 +466,35 @@ html, body {
   border: 1px solid #f1f1f1;
 }
 
-#top #top-buy #buycar #buy-content1 .section2 .cont-l {
+#top #top-buy #buycar #buy-content1 .container-main .section2 .cont-l {
   margin-top: 5px;
   margin-left: 10px;
   float: left;
   width: 340px;
 }
 
-#top #top-buy #buycar #buy-content1 .section2 .cont-l .goodname a {
+#top #top-buy #buycar #buy-content1 .container-main .section2 .cont-l .goodname a {
   color: blue;
   font-size: 12px;
 }
 
-#top #top-buy #buycar #buy-content1 .section2 .cont-l .goodcolor, #top #top-buy #buycar #buy-content1 .section2 .cont-l .goodsize {
+#top #top-buy #buycar #buy-content1 .container-main .section2 .cont-l .goodcolor, #top #top-buy #buycar #buy-content1 .container-main .section2 .cont-l .goodsize {
   display: inline-block;
   font-size: 12px;
 }
 
-#top #top-buy #buycar #buy-content1 .section2 .cont-l .goodcolor span, #top #top-buy #buycar #buy-content1 .section2 .cont-l .goodsize span {
+#top #top-buy #buycar #buy-content1 .container-main .section2 .cont-l .goodcolor span, #top #top-buy #buycar #buy-content1 .container-main .section2 .cont-l .goodsize span {
   font-size: 12px;
 }
 
-#top #top-buy #buycar #buy-content1 .section2 .cont-mid {
+#top #top-buy #buycar #buy-content1 .container-main .section2 .cont-mid {
   margin-top: 15px;
   width: 50px;
   float: left;
   color: red;
 }
 
-#top #top-buy #buycar #buy-content1 .section2 .cont-r {
+#top #top-buy #buycar #buy-content1 .container-main .section2 .cont-r {
   margin-top: 10px;
   cursor: pointer;
   width: 50px;
@@ -501,12 +502,12 @@ html, body {
   text-align: center;
 }
 
-#top #top-buy #buycar #buy-content1 .section2 .cont-r .num1 {
+#top #top-buy #buycar #buy-content1 .container-main .section2 .cont-r .num1 {
   font-size: 12px;
   display: block;
 }
 
-#top #top-buy #buycar #buy-content1 .section2 .cont-r .del {
+#top #top-buy #buycar #buy-content1 .container-main .section2 .cont-r .del {
   font-size: 12px;
   color: blue;
 }
